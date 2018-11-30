@@ -3,7 +3,7 @@ import Grid from '../template/grid'
 import IconButton from '../template/iconButton'
 
 export default props => (
-    <div role="form" className="todoForm">
+    <div role="form" className="todo-form">
         <Grid cols="12 9 10">
             <input
                 id="description"
@@ -18,6 +18,8 @@ export default props => (
                 onClick={ props.handleAdd } />
             <IconButton style="info" icon="search"
                 onClick={ props.handleSearch } />
+            <IconButton style="default" icon="close"
+                onClick={ props.handleClear } />
         </Grid>
     </div>
 )
